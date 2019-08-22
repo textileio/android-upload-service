@@ -471,7 +471,8 @@ public abstract class UploadTask implements Runnable {
                 .setSmallIcon(statusConfig.iconResourceID)
                 .setLargeIcon(statusConfig.largeIcon)
                 .setColor(statusConfig.iconColorResourceID)
-                .setGroup(UploadService.NAMESPACE)
+                .setGroup(UploadService.UPLOAD_GROUP_KEY)
+                .setGroupAlertBehavior(2) // GROUP_ALERT_SUMMARY
                 .setProgress(100, 0, true)
                 .setOngoing(true);
 

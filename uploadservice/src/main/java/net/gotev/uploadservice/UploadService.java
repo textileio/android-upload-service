@@ -74,7 +74,12 @@ public final class UploadService extends Service {
      * Sets the namespace used to broadcast events. Set this to your app namespace to avoid
      * conflicts and unexpected behaviours.
      */
-    public static String NAMESPACE = "net.gotev";
+    public static String NAMESPACE = "io.textile";
+
+    /**
+     * Sets the group ID for all background upload notifications
+     */
+    public static String UPLOAD_GROUP_KEY = "io.textile.FILE_SYNC";
 
     /**
      * Sets the HTTP Stack to use to perform HTTP based upload requests.
